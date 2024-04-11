@@ -8,6 +8,9 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Strength Training Tools',
+  openGraph: {
+    images: ['/og'],
+  },
 };
 
 export default function RootLayout({
