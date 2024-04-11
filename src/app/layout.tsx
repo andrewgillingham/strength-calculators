@@ -7,7 +7,13 @@ import { GoogleAnalytics } from '@next/third-parties/google';
 const inter = Inter({ subsets: ['latin'] });
 
 const baseMetaData: Metadata = {
-  title: 'Strength Training Tools',
+  title: {
+    template: '%s | Strength Training Tools',
+    default: 'Strength Training Tools',
+  },
+  twitter: {
+    card: 'summary_large_image',
+  },
   openGraph: {
     images: ['/og'],
   },

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { PAGES_CONTENT } from './data/page-content';
+import { Metadata } from 'next';
 
 const CALCULATOR_CARDS = Object.values(PAGES_CONTENT);
 
