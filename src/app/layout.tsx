@@ -20,7 +20,7 @@ export default function RootLayout({
         <header className="max-w-[960px] mx-auto p-4">
           <nav className="flex gap-4 *:transition *:border-b-2">
             <Link className="hover:text-teal-800 border-b-transparent hover:border-b-teal-800" href="/">
-              Home
+              Calculators
             </Link>
             <Link className="hover:text-teal-800 border-b-transparent hover:border-b-teal-800" href="/one-rm-calculator">
               1RM Calculator
