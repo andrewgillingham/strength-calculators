@@ -8,7 +8,7 @@ export default function Home() {
     <section>
       <h1>Calculators</h1>
       {CALCULATOR_CARDS.map((content, i) => (
-        <div className="bg-white rounded p-8 border border-teal-600" key={`calc-card-${i}`}>
+        <div className="bg-white rounded p-8 border border-teal-600 text-slate-900" key={`calc-card-${i}`}>
           <h2>{content.title}</h2>
           <p className="mb-4">{content.description}</p>
           <p>
