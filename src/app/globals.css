@@ -18,16 +18,45 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+section {
+  @apply p-4;
+}
+
+h1 {
+  @apply text-4xl font-bold mb-4;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+form {
+  input[type='text'] {
+    @apply w-full;
+  }
+  input[type='text'],
+  input[type='number'],
+  select {
+    @apply p-2 border border-gray-300 rounded text-black;
+  }
+
+  label {
+    @apply font-bold;
+    @apply hover:cursor-pointer;
+
+    input,
+    select {
+      @apply font-normal;
+    }
+  }
+}
+
+.button {
+  @apply bg-teal-600 rounded py-1 px-3 text-white transition-colors;
+  @apply hover:bg-teal-800 focus:bg-teal-800 hover:cursor-pointer;
 }
