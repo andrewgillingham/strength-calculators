@@ -6,12 +6,18 @@ import { GoogleAnalytics } from '@next/third-parties/google';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export const metadata: Metadata = {
+const baseMetaData: Metadata = {
   title: 'Strength Training Tools',
   openGraph: {
     images: ['/og'],
   },
 };
+
+if (process.env.VERCEL_ENV === 'production') {
+  baseMetaData.metadataBase = new URL('https://strengthlevel.fit');
+}
+
+export const metadata = baseMetaData;
 
 export default function RootLayout({
   children,
