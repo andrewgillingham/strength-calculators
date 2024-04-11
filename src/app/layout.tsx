@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import Link from 'next/link';
 import { GoogleAnalytics } from '@next/third-parties/google';
+import Script from 'next/script';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -49,6 +50,7 @@ export default function RootLayout({
         <main className="max-w-[960px] mx-auto">{children}</main>
       </body>
       <GoogleAnalytics gaId="G-5W05BE9Z2Y" />
+      <Script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3136554406993781" crossOrigin="anonymous" />
     </html>
   );
 }
