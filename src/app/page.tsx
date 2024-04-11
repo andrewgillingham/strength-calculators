@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import { PAGE_CONTENT as ONE_RM_PAGE_CONTENT } from './one-rm-calculator/page';
+import { PAGES_CONTENT } from './data/page-content';
 
-const CALCULATOR_CARDS = [ONE_RM_PAGE_CONTENT];
+const CALCULATOR_CARDS = Object.values(PAGES_CONTENT);
 
 export default function Home() {
   return (
